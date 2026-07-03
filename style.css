@@ -1,14 +1,33 @@
+/*No Seletor * estamos dando um reset na moldura do projeto */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-body {
+body{
     display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    background-color: #f5f2f2;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #f5f2f2;
+}
+
+.cabecalho {
+    background-color: aquamarine;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 25px;
+}
+
+.cabecalho-titulo {
+    color: #2c8db7;
+    font-size: 24px;
+}
+
+.cabecalho-link {
+    color: #fff;
+    text-decoration: none;
 }
 
 .principal {
@@ -19,17 +38,18 @@ body {
     align-items: center;
 }
 
-.cabecalho {
-    background-color: #633921;
-    padding: 15px 25px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.cartao-interno {
+  position: relative;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
 }
 
-.cabecalho-link {
-    color: #fff;
-    text-decoration: none;
+.cartao-frente,
+.cartao-verso {
+  position: absolute;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  backface-visibility: hidden;
 }
 
 .cartao {
@@ -41,29 +61,23 @@ body {
     width: 100%;
 }
 
-.cartao.verso {
-    position: relative;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
-    transform: rotateY(180deg);
-}
-
-.cartao.frente,
-.cartao.verso {
-    position: absolute;
-    border-radius: 12px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-    backface-visibility: hidden;
-}
-
-section {
-    display: flex;
-    gap: 16px;
-}
-
 .rodape {
-    background-color: #7e3e1c;
+    background-color: #2c8db7;
     padding: 15px 25px;
     color: #fff;
 }
 
+.cartao-verso {
+  transform: rotateY(180deg);
+}
+
+.cartao:hover .cartao-interno {
+  transform: rotateY(180deg);
+}
+
+section {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
