@@ -13,7 +13,7 @@ body{
 }
 
 .cabecalho {
-    background-color: aquamarine;
+    background-color: rgb(255, 21, 21);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -21,7 +21,7 @@ body{
 }
 
 .cabecalho-titulo {
-    color: #2c8db7;
+    color: #024123;
     font-size: 24px;
 }
 
@@ -62,7 +62,7 @@ body{
 }
 
 .rodape {
-    background-color: #2c8db7;
+    background-color: #0d5a1a;
     padding: 15px 25px;
     color: #fff;
 }
