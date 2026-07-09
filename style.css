@@ -59,6 +59,9 @@ body{
 
 .cartao-imagem {
     width: 100%;
+    height: 120px;
+    object-fit: cover;
+    display: block;
 }
 
 .rodape {
