@@ -13,7 +13,7 @@ body{
 }
 
 .cabecalho {
-    background-color: rgb(0, 65, 43);
+    background-color: rgb(2, 100, 19);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -21,7 +21,7 @@ body{
 }
 
 .cabecalho-titulo {
-    color: rgb(5, 68, 16);
+    color: rgb(5, 94, 20);
     font-size: 24px;
 }
 
